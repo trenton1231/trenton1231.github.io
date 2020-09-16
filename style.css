@@ -3,11 +3,11 @@
 
 /* Color Definitions */
 :root {
-    --color-main: #074F57;
-    --color-secondary: #da6c58;
-    --color-tertiary: #FDEBC3;
-    --color-quad: #73291C;
-    --shadow: rgba(0, 0, 0, 0.315);
+    --color-main: #C2D3CD;
+    --color-secondary: #AFBFC0;
+    --color-tertiary: #9FA4A9;
+    --color-quad: #847E89;
+    --shadow: #56494C;
 
 }
 
@@ -15,7 +15,7 @@ html {
     font-size: 16px;
     margin: 0px;
     padding: 0px;
-    background-color: #c7c7c7;
+    background-color: #C2D3CD;
 }
 
 body{
