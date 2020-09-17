@@ -6,20 +6,20 @@
     --color-main: #264653;
     --color-secondary: #2a9d8f;
     --color-tertiary: #e9c46a;
-    --color-quad: #f4a261;
+    --color-quad: #fa8536;
     --shadow: #e76f51;
 
 }
 
 html {
     font-size: 16px;
-    margin: 0px;
-    padding: 0px;
+    margin: 10px;
+    padding: 100px;
     background-color: #32161F;
 }
 
 body{
-    margin: 0em 10vw;
+    margin: 0em 1vw;
     box-shadow: var(--shadow) .5em .5em;
     border-bottom-left-radius: 2em;
     border-bottom-right-radius: 2em;
@@ -36,7 +36,7 @@ header {
     max-height: 10em;
     width: auto;
     font-family: 'Lobster', cursive;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
 }
 
 h1 {
@@ -65,7 +65,7 @@ main h2 {
     margin: 0em;
     color: var(--color-main);
     font-size: 2.441em;
-    line-height: 3em;
+    line-height: 2em;
     font-weight: 900;
 }
 
