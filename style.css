@@ -3,11 +3,11 @@
 
 /* Color Definitions */
 :root {
-    --color-main: #C2D3CD;
-    --color-secondary: #AFBFC0;
-    --color-tertiary: #9FA4A9;
-    --color-quad: #847E89;
-    --shadow: #56494C;
+    --color-main: #264653;
+    --color-secondary: #2a9d8f;
+    --color-tertiary: #e9c46a;
+    --color-quad: #f4a261;
+    --shadow: #e76f51;
 
 }
 
@@ -15,7 +15,7 @@ html {
     font-size: 16px;
     margin: 0px;
     padding: 0px;
-    background-color: #C2D3CD;
+    background-color: #32161F;
 }
 
 body{
@@ -27,9 +27,9 @@ body{
 
 header,
 footer {
-    background-color: var(--color-main, teal);
+    background-color: var(--color-main);
     padding: 0em 2em;
-    color: var(--color-tertiary, wheat);
+    color: var(--color-tertiary);
 }
 
 header {
@@ -54,7 +54,7 @@ header img {
 }
 
 main {
-    background-color: var(--color-tertiary, wheat);
+    background-color: var(--color-tertiary);
     min-height: 30vh;
     padding: 1.5em 2em;
     font-family: 'Lato', sans-serif;
@@ -63,14 +63,14 @@ main {
 
 main h2 {
     margin: 0em;
-    color: var(--color-primary, teal);
+    color: var(--color-main);
     font-size: 2.441em;
     line-height: 3em;
     font-weight: 900;
 }
 
 main hr {
-    background-color: var(--color-main, teal);
+    background-color: var(--color-main);
     height: .5em;
     border-radius: .5em;
 }
@@ -79,16 +79,16 @@ main p,
 main ul {
     font-size: 1.25em;
     font-weight: 800;
-    color: var(--color-main, teal);
+    color: var(--color-main);
 }
 
 main ul li a {
-    color: var(--color-quad, brown);
+    color: var(--color-quad);
     padding-left: .25em;
 }
 
 main ul li a:hover {
-    color: var(--color-secondary, cyan);
+    color: var(--color-secondary);
     padding-left: .25em;
 }
 
@@ -104,7 +104,7 @@ footer {
 }
 
 footer a {
-    color: var(--color-secondary, cyan);
+    color: var(--color-secondary);
 }
 footer a:hover {
     color: white;
