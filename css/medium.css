@@ -1,0 +1,29 @@
+@media only screen and (min-width: 32.5em) {
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    main h2 {
+        font-size: 2.5em;
+    }
+
+    header, footer {
+        border-radius: 10px;
+    }
+
+    header img {
+        box-shadow: 0 0 30px var(--shadow);
+        float: right;
+        border-radius: 0 10px 0 0;
+    }
+
+    main p,
+    main ul {
+    font-size: 2em;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+}
