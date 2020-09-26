@@ -1,40 +1,66 @@
+:root {
+    --color-main: #102542;
+    --color-secondary: #f87060;;
+    --color-tertiary: #cdd7d6;
+    --color-quad: #b3a394;
+    --shadow: #b3a394;
+}
+
 body {
 	font-size: 16px;
 	font-family: "Sansita", Ubuntu, sans-serif;
 }
 /* phone or baseline views **************************/
 main {
-	max-width: 767px;
-	margin: 0 auto;
+	max-width: auto;
+	margin: auto;
 	display: grid;
 	grid-template-columns: 1fr;
-	font-size: 0.8rem;
+    font-size: 25px;
 }
 
 main section h2 {
-	color: #536878;
+    color: var(--color-tertiary);
+    background-color: var(--color-main);
+    padding: 1em 1.5em;
+    font-family: 'Caverat', cursive;
+    border-radius: 15px;
+
 }
 
 main section {
 	margin: 0.5rem;
-	border: 1px solid #bbb;
-	padding: 0 1rem;
-	background-color: #eee;
+	border: 1px solid var(--shadow);
+    background-color: var(--color-quad);
+    font-family: 'Indie Flower', cursive;
 }
 
 main section:nth-child(2) {
 	display: none;
-	margin: 0.5rem;
+    margin: 0.5rem;
+}
+main section p {
+    font-size: 15px;
+    color: var(--color-tertiary);
+    background-color: var(--color-main);
+    padding: 1em 1.5em;
 }
 
-.colimage {
-	box-shadow: 0 0 30px #333;
+.images {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
 }
-
+.links {
+    background-color: var(--color-tertiary);
+    padding-left: 35%;
+    color: var(--color-main);
+}
 /* Tablet Views ******************************/
 @media only screen and (min-width: 37.5em) {
 	main {
-		grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        font-size: 30px;
 	}
 
 	main section:nth-child(2) {
@@ -52,16 +78,23 @@ main section:nth-child(2) {
 		width: 100%;
 		height: auto;
 		border: 1px solid #bbb;
-	}
+    }
+    main section p {
+        font-size: 20px;
+    }
 }
 
 /* Desktop Views ****************************/
 @media only screen and (min-width: 60em) {
 	main {
-		grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 35px;
 	}
 
 	main section:nth-child(3) {
 		grid-column: span 1;
-	}
+    }
+    main section p {
+        font-size: 25px;
+    }
 }
