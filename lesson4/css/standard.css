@@ -1,0 +1,157 @@
+:root {
+    --color-main: #50514F;
+    --color-secondary: #B4ADEA;;
+    --color-tertiary: #FDFFF7;
+    --color-quad: #b9baa3;
+    --shadow: #333;
+
+}
+body {
+    font-size: 16px;
+    font-family: initial;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: "Sansita Swashed";
+    text-align: center;
+
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Chilanka";
+    padding: .5em;
+}
+
+header {
+    background-color: var(--color-secondary);
+    border: 5px outset var(--color-secondary);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 15px 0 0;
+    color: var(--color-main);
+    padding: 15px 0;
+    text-align: center;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+.headings h1 {
+    font-size: 1.6rem;
+    margin: 0 0 0 8px;
+    margin-left: 10px;
+}
+
+.headings {
+    margin-left: 1rem;
+}
+
+.iconH4 {
+    font-style: initial;
+    letter-spacing: 1pt;
+    font-size: 15px;
+    padding: 5px;
+}
+
+footer {
+    background-color: var(--color-secondary);
+    border: 5px outset var(--color-secondary);
+    border-radius: 3px 3px 15px 15px;
+    padding: 10px;
+    text-align: center;
+    color: var(--color-main);
+    margin: 0 auto;
+}
+
+nav {
+    background-color: var(--color-tertiary);
+    text-align: center;
+    box-shadow: 0 2px 15px #333;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    display: block;
+    font-size: 0.95rem;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.ham {
+    align-content: center;
+}
+
+.boxes {
+    box-sizing: border-box;
+    margin: 10px auto;
+    border: 5px outset var(--color-secondary);
+    padding: 15px;
+    display: flex;
+    background-color: var(--color-quad);
+    color: var(--shadow);
+    font-style: initial;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none
+}
+
+.navigation a {
+    display: block;
+    border: 5px outset var(--color-secondary);
+    padding: 0.75rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.navigation a:hover {
+    color: var(--color-main);
+    background-color: var(--shadow);
+}
+
+.responsive li {
+    display: block;
+}
+
+p {
+    margin: .5px;
+    padding: 6px;
+    font-family: "Sansita Swashed";
+}
+
+main {
+    font-size: 0.8rem;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
