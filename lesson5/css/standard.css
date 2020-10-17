@@ -1,0 +1,265 @@
+:root {
+    --color-main: #50514F;
+    --color-secondary: #B4ADEA;;
+    --color-tertiary: #FDFFF7;
+    --color-quad: #b9baa3;
+    --shadow: #333;
+
+}
+body {
+    font-size: 16px;
+    font-family: initial;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    margin: 0;
+    text-shadow: 3px 3px 5px var(--color-shadow);
+
+}
+
+header {
+    background-color: var(--color-main);
+    border: 5px outset var(--color-main);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 15px 0 0;
+    color: var(--color-quad);
+    padding: 15px 0;
+    text-align: center;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+.headings h1 {
+    font-size: 1.8rem;
+    margin: 0 0 0 8px;
+    margin-left: 10px;
+}
+
+.headings {
+    margin-left: 1rem;
+}
+
+.iconH4 {
+    font-style: initial;
+    letter-spacing: 1pt;
+    font-size: 15px;
+    padding: 5px;
+}
+
+footer {
+    background-color: var(--color-main);
+    border: 5px outset var(--color-main);
+    border-radius: 3px 3px 15px 15px;
+    padding: 10px;
+    text-align: center;
+    color: var(--color-quad);
+    margin: 0 auto;
+}
+
+nav {
+    background-color: var(--color-tertiary);
+    text-align: center;
+    box-shadow: 0 2px 15px var(--color-shadow);
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    display: block;
+    font-size: 0.95rem;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.menusign {
+    align-content: center;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none
+}
+
+.navigation a {
+    display: block;
+    border: 5px outset var(--color-main);
+    padding: 0.75rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.navigation a:hover {
+    color: var(--color-quad);
+    background-color: var(--color-main);
+}
+
+.responsive li {
+    display: block;
+}
+
+p {
+    margin: .5px;
+    padding: 6px;
+    font-family: 'monospace'monospace;
+}
+
+main {
+    padding: 15px 15px 0 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bannerdiv {
+    margin: 10px auto;
+    position: relative;
+}
+
+.bannerdiv img {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.bannerSection {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    flex-wrap: wrap;
+    background: radial-gradient(var(--color-secondary), var(--color-tertiary));
+    color: var(--color-main);
+    border: 1px solid var(--color-secondary);
+    padding: 1.5rem;
+    box-shadow: 0 0 30px var(--shadow);
+    opacity: .7;
+}
+
+.articlebox img {
+    box-shadow: 0 0 30px var(--shadow);
+    padding: .25rem;
+    width: 300px;
+    height: 300px;
+    float: right;
+}
+
+.articlebox {
+    border: 1px solid var(--color-main);
+    padding: 15px;
+    background-color: var(--color-main);
+    height: auto;
+    color: var(--color-secondary);
+    border-radius: 8px;
+    display: grid;
+    float: left;
+    grid-template-columns: 1fr;
+}
+
+.alert {
+    display: none;
+    text-align: center;
+    padding: 1em;
+    color: var(--color-secondary);
+}
+
+.forecastsection {
+    display: none;
+}
+
+.banpic {
+    width: 900px;
+    display: flex;
+}
+
+.active {
+    background-color: var(--color-main);
+    color: var(--color-shadow);
+    font-weight: bold;
+}
+
+.artImg {
+    width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    min-width: 200px;
+    max-width: 1220px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.flex-item {
+    background-color: var(--color-quad);
+    border: 1px solid var(--color-main);
+    margin: 3px;
+    padding: 10px 0 0 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+span {
+    padding-left: 10px;
+    text-align: right;
+}
+
+.flex-container2 {
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-width: 200px;
+    max-width: 1220px;
+    margin-top: 10px;
+    margin-bottom: 0em;
+}
+
+.contactspan {
+    padding-left: 10px;
+    text-align: center;
+    left: -350px;
+    float: right;
+    top: -300px;
+}
+
+.flex-item2 {
+    background-color: var(--color-tertiary);
+    border: 1px solid var(--color-main);
+    margin: 3px;
+    padding: 10px 0 0 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.map {
+    width: 300px;
+    height: 260px;
+    float: left;
+    margin-right: 100px;
+}
