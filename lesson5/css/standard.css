@@ -1,11 +1,13 @@
 :root {
     --color-main: #50514F;
-    --color-secondary: #B4ADEA;;
+    --color-secondary: #B4ADEA;
+    ;
     --color-tertiary: #FDFFF7;
     --color-quad: #b9baa3;
     --shadow: #333;
 
 }
+
 body {
     font-size: 16px;
     font-family: initial;

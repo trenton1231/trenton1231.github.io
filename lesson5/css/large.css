@@ -1,12 +1,14 @@
 @media only screen and (min-width: 60em) {
     :root {
         --color-main: #50514F;
-        --color-secondary: #B4ADEA;;
+        --color-secondary: #B4ADEA;
+        ;
         --color-tertiary: #FDFFF7;
         --color-quad: #b9baa3;
         --shadow: #333;
-    
+
     }
+
     h2 {
         color: steelblue;
     }
