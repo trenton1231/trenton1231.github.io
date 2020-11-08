@@ -122,16 +122,10 @@ body {
 
 .thanks {
     text-align: center;
-    border: 5px outset #902923;
+    border: 5px outset var(--color-main);
     border-radius: 15px;
     box-shadow: 5px 5px 5px #333;
 }
-
-.checkmark {
-    height: 70px;
-}
-
-
 h1 {
     font-family: "Roboto Mono", monospace;
     text-align: center;
