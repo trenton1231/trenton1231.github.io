@@ -1,0 +1,10 @@
+main,
+footer {
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer {
+    font-size: 25px;
+    color: #50514F;
+}
