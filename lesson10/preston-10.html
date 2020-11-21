@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 05 - The Weather WDD230</title>
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/standard.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&family=Sansita+Swashed:wght@300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="alert">
+        <h3>Saturday is Preston Pancakes in the Park! 9:00 AM in the city park pavillion.
+        </h3>
+    </div>
+    <header>
+        <picture class="weathericon">
+            <img src="images/WeatherIcon.jpg" alt="weathericon">
+        </picture>
+        <section class="headings">
+            <h1>The Weather Site</h1>
+            <div class="iconH4">
+                Your most accurate predictions to plan your life.
+            </div>
+        </section>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li>
+                <a class="ham" href="#">&#9776; Menu</a>
+            </li>
+            <li>
+                <a href="/lesson9/index.html">Home</a>
+            </li>
+            <li>
+                <a href="/lesson10/preston-10.html">Preston</a>
+            </li>
+            <li>
+                <a href="#">Soda Springs</a>
+            </li>
+            <li>
+                <a href="#">Fish Haven</a>
+            </li>
+            <li>
+                <a href="/lesson8/stormcenter.html">Storm Center</a>
+            </li>
+            <li>
+                <a href="/lesson7/gallery-7.html">Gallery</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Preston Idaho</h1>
+        <div class="bannerdiv">
+            <picture>
+                <source srcset="images/weatherSmall.jpeg" media="(max-width: 33.5em)">
+                <source srcset="images/weatherMedium.jpeg" media="(max-width: 57.5em)">
+                <img src="images/weatherLarge.jpeg" class="Image" alt="Preston">
+            </picture>>
+
+            <section class="bannerSection">
+                <h3 class="h2banner">Weather Summary</h3>
+                <p>Currently:<span id="currently"></span></p>
+                <p>High:<span id="high"></span></p>
+                <p>Wind Chill:<span id="windchill"></span></p>
+                <p>Humidity:<span id="humid"></span></p>
+                <p>Wind Speed:<span id="windspeed"></span></p>
+            </section>
+        </div>
+
+        <div class="forecastsection">
+            <h2>5 Day Forecast</h2>
+            <table class="forecasttable">
+                <tr>
+                    <th><span id="dayofweek6"></span></th>
+                    <th><span id="dayofweek14"></span> </th>
+                    <th><span id="dayofweek22"></span> </th>
+                    <th><span id="dayofweek30"></span> </th>
+                    <th><span id="dayofweek38"></span> </th>
+                </tr>
+                <tr>
+
+
+                    <td> <br> &nbsp;<img src="" alt="" id="icon6"><br> <span id="forecast6"></span>&deg; F</td>
+                    <td> <br> &nbsp;<img src="" alt="" id="icon14"> <br><span id="forecast14"></span>&deg; F</td>
+                    <td> <br> &nbsp;<img src="" alt="" id="icon22"> <br><span id="forecast22"></span>&deg; F</td>
+                    <td> <br> &nbsp;<img src="" alt="" id="icon30"> <br><span id="forecast30"></span>&deg; F</td>
+                    <td> <br> &nbsp;<img src="" alt="" id="icon38"> <br><span id="forecast38"></span>&deg; F</td>
+                </tr>
+            </table>
+            <span id="imagesrc"></span>
+        </div>
+        <div class="flex-container">
+
+            <div class="flex-item">
+                <img class="artImg" src="images/fresno.jpg" alt="artyImg">
+
+                <h3>Founder Day Fresco</h3>
+                <h4><i>Trenton Southard</i></h4>
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia...
+
+                    <a href="#">continue to full article</a></span>
+            </div>
+        </div>
+
+        <div class="flex-container2">
+            <div class="flex-item2">
+
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1900.564918272261!2d-119.77131171002578!3d36.762015409085826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945de1549e4e9d%3A0x7b12406449a3b811!2sFresno%2C%20CA!5e0!3m2!1sen!2sus!4v1602974928678!5m2!1sen!2sus">
+                </iframe>
+                <h3>Contact Info</h3>
+                <h3>The Weather Site</h3>
+                5555 Unknown Dr,<br>Preston, ID 83263<br>
+                Phone: (555)555-5555<br>Email: weather@weather.com<br><br>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            The Weather Site | Attributions | Trenton Southard
+        </p>
+        <span id="update"></span>
+    </footer>
+    <script src="js/date.js"></script>
+    <script src="js/pres10.js"></script>
+    <script src="js/response.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+</body>
+
+</html>
