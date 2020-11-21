@@ -1,4 +1,4 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=518db1622a5cfa0281875e3927cb3b7c&units=imperial";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=8b53852779ab7526edc0a9a6eacc15cd&units=imperial";
 fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
@@ -27,7 +27,7 @@ fetch(apiURL)
     });
 
 
-const apiURLs = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=518db1622a5cfa0281875e3927cb3b7c&units=imperial";
+const apiURLs = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=8b53852779ab7526edc0a9a6eacc15cd&units=imperial";
 fetch(apiURLs)
     .then((response) => response.json())
     .then((jsObject) => {
