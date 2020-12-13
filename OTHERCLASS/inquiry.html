@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="column1">
+                <div class=row1>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="inquiry.html">Inquires</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="logo">
+                    <img src="https://cdn.glitch.com/3cbd9819-b851-4d28-bb49-195f35a10b82%2FOasisLogo.png?v=1604128510089"
+                        alt="Oasis Logo">
+                </div>
+            </div>
+            <div class="p2row3">
+                <p class="pMain2">We believe firmly in being upfront with our pricing. It allows you
+                    to know if we are the right fit for you. Below, you will find our
+                    picing as well as a simple to use form to request more information
+                    from us. Please iunclude as much information as possible when
+                    requesting help.</p>
+            
+            <ul class="leftRow4">
+                <h4>Price List*</h4>
+                <li>Home $75</li>
+                <li>Apartment $50</li>
+                <li>Acerage $100</li>
+                <li>Family Photo $75</li>
+                <li>Solo Photo $50</li>
+                <li>Pets(each) $40</li>
+                <h5>
+                    *Please note prices are per hour
+                </h5>
+            </ul>
+        </div>
+
+            <div class="column2">
+                <div class="feedback">
+                    <form action="/my-handling-form-page" method="post">
+                        <ul>
+                            <li>
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="user_name" />
+                            </li>
+                            <li>
+                                <label for="request">Date Requested:</label>
+                                <input type="date" id="request" name="request_date" />
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button onclick="myFunction()" class="dropbtn">Service Type:</button>
+                                    <div id="myDropdown" class="dropdown-content">
+                                        <a href="#">Home</a>
+                                        <a href="#">Apartment</a>
+                                        <a href="#">Acerage</a>
+                                        <a href="#">Family Photo</a>
+                                        <a href="#">Solo Photo</a>
+                                        <a href="#">Pets</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="msg">Additional Info:</label>
+                                <textarea id="msg" name="user_message"></textarea>
+                            </li>
+                            <li class="button">
+                                <button type="submit">Send your message</button>
+                            </li>
+                        </ul>
+                    </form>
+                    <script>
+                        // get the feedback div element so we can do something with it.
+                        const feedbackElement = document.getElementById("feedback");
+                        // get the form so we can read what was entered in it.
+                        const formElement = document.forms[0];
+                        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+                        formElement.addEventListener("submit", function (e) {
+                            // stop the form from doing the default action
+                            e.preventDefault();
+                            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+                            feedbackElement.innerHTML =
+                                "Hello " +
+                                formElement.user_name.value +
+                                "! Thank you for your message. We will get back with you as soon as possible!";
+                            // make the feedback element visible.
+                            feedbackElement.style.display = "block";
+                            // add a class to move everything down so our message doesn't cover it.
+                            document.body.classList.toggle("moveDown");
+                        });
+                    </script>
+                </div>
+            </div>
+
+            <div class="row5">
+                <p>&copy; 2020 - Trenton Southard - Section 14 WDD130</p>
+            </div>
+
+            <div class="column3">
+                <div class="top">
+                    <img class="tPhoto" src="/lesson11/images/clear.png" alt="top">
+                </div>
+                <div class="bottom">
+                    <img class="bPhoto" src="/lesson11/images/clouds.png" alt="bottom">
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

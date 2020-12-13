@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        var picPaths = ["https://cdn.glitch.com/3cbd9819-b851-4d28-bb49-195f35a10b82%2FIMG_0135.jpg?v=1605390188032","https://cdn.glitch.com/3cbd9819-b851-4d28-bb49-195f35a10b82%2FIMG_0010.jpg?v=1605390139180","https://cdn.glitch.com/3cbd9819-b851-4d28-bb49-195f35a10b82%2FIMG_1639.jpg?v=1605390124747","https://cdn.glitch.com/3cbd9819-b851-4d28-bb49-195f35a10b82%2FIMG_0232.jpg?v=1605390137166","https://cdn.glitch.com/3cbd9819-b851-4d28-bb49-195f35a10b82%2FShannon.jpg?v=1605389423111","https://cdn.glitch.com/3cbd9819-b851-4d28-bb49-195f35a10b82%2Flg.jpg?v=1605389424141","https://cdn.glitch.com/3cbd9819-b851-4d28-bb49-195f35a10b82%2FIMG_0451.JPG?v=1605390136081","https://cdn.glitch.com/3cbd9819-b851-4d28-bb49-195f35a10b82%2FIMG_1470.jpg?v=1605390162727","https://cdn.glitch.com/3cbd9819-b851-4d28-bb49-195f35a10b82%2FIMG_1469.jpg?v=1605390162975","https://cdn.glitch.com/3cbd9819-b851-4d28-bb49-195f35a10b82%2FIMG_1632.jpg?v=1605390123833"];
+        var curPic = -1;
+        //preload the images for smooth animation
+        var imgO = new Array();
+        for(i=0; i < picPaths.length; i++) {
+            imgO[i] = new Image();
+            imgO[i].src = picPaths[i];
+        }
+
+        function swapImage() {
+            curPic = (++curPic > picPaths.length-1)? 0 : curPic;
+            imgCont.src = imgO[curPic].src;
+            setTimeout(swapImage,5000);
+        }
+
+        window.onload=function() {
+            imgCont = document.getElementById('imgBanner');
+            swapImage();
+        }
+    </script>
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+            <div class="column1">
+
+                <div class=row1>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="inquiry.html">Inquires</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="logo">
+                    <img src="https://cdn.glitch.com/3cbd9819-b851-4d28-bb49-195f35a10b82%2FOasisLogo.png?v=1604128510089"
+                        alt="Oasis Logo">
+                </div>
+                <div class="row2">
+                    <p class="pMain">Here, you'll find a wide array of photos from our previous clients.
+                        Take your time, stay awhile, and enjoy. You may find ideas for your
+                        next photo shoot to help us better provide what your seeking in your
+                        oasis.</p>
+                </div>
+                <div class="row3">
+                    <img id=imgBanner class="tPhoto"
+                        src="https://cdn.glitch.com/3cbd9819-b851-4d28-bb49-195f35a10b82%2FIMG_1632.jpg?v=1605390123833"
+                        alt="Photo 1" />
+                    <img class="bPhoto"
+                        src="https://cdn.glitch.com/3cbd9819-b851-4d28-bb49-195f35a10b82%2FIMG_0047.jpg?v=1605390140987"
+                        alt="Photo 2" />
+                </div>
+                <div class="row4">
+                        
+                </div>
+                <footer>
+
+                    <div class="row5">
+                        <p>&copy; 2020 - Trenton Southard - Section 14 WDD130</p>
+                    </div>
+                </footer>
+            </div>
+            <div class="column3">
+                <div class="top">
+                    <img class="tPhoto" src="https://cdn.glitch.com/3cbd9819-b851-4d28-bb49-195f35a10b82%2FIMG_0135.jpg?v=1605390188032"
+                    alt="photo 3" />
+                </div>
+                <div class="middle">
+                    <img class="mPhoto" src="https://cdn.glitch.com/3cbd9819-b851-4d28-bb49-195f35a10b82%2FIMG_0056.jpg?v=1605390162727"
+                    alt="photo 4" />
+                </div>
+                <div class="bottom">
+                    
+                    <img class="bPhoto" src="https://cdn.glitch.com/3cbd9819-b851-4d28-bb49-195f35a10b82%2FIMG_1639.jpg?v=1605390124747"
+                        alt="photo 5" >
+                </div>
+            </div>
+    </main>
+
+</body>
+
+</html>
