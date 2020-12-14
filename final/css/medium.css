@@ -8,7 +8,7 @@
 }
 
 body {
-    background: f7fff7;
+    background: var(--color-tertiary);
     max-width: 1600px;
     margin: auto;
 }
