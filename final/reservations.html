@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Reservations | Scoots</title>
+
+    <link rel="icon" href="images/scootLogo.jpeg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=East+Sea+Dokdo&family=Langar&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+
+
+    <header>
+        <a href="#"><img src="images/scootLogo.jpeg" alt="scoots logo"></a>
+
+        <div class="headings">
+
+            <div class="m"> 
+                Vehículos para tu disfrute
+                Vechicles for your enjoyment
+            </div>
+
+            <div class="s"> Vehículos para tu disfrute
+            </div>
+        </div>
+    </header>
+
+
+    <nav class="clearfix">
+
+        <ul class="navigation">
+            <li><a class="ham" href="#"> &#9776; Menu </a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="hero">
+            <figure>
+
+                <img src="images/scooter.jpeg" alt="scooters on a cliff" />
+
+            </figure>
+
+        </div>
+
+        <section class="clima">
+            <h2>Have we mentioned the views yet?</h2>
+            <p>Beaches | Mountains | Ancient Ruins | 5-Star Resortrs| Oceans | Jungles</p>
+        </section>
+
+        <div class="container">
+            <h3> Are you ready to explore Cozumel?</h3>
+        </div>
+
+        <div class="reserveform">
+            <form id="my-form" action="thanks.html" method="get">
+
+                <div class="form-box">
+                    <label for="startdate">Start Date<span class="datepicker-format"> (<abbr
+                                title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span></label>
+                    <input type="date" id="startdate" name="startdate" min="2020-07-27" max="2022-12-31" />
+                </div>
+
+                <div class="form-box">
+                    <label for="enddate">End Date<span class="datepicker-format"> (<abbr
+                                title="Four digits year, dash, two digits month, dash, two digits day">YYYY-MM-DD</abbr>)</span></label>
+                    <input type="date" id="enddate" name="enddate" min="2020-07-28" max="2022-12-31" />
+                </div>
+
+                <div class="form-box">
+                    <label for="domain">Rental Type</label>
+                    <input list="storms" id="domain" name="domain" placeholder="Choose rental..." />
+
+                    <datalist id="storms">
+                        <option value="Honda Metro Scooter"></option>
+                        <option value="Honda Dio Scooter"></option>
+                        <option value="Honda PCX150 Scooter"></option>
+                        <option value="Honda Pioneer 1000 ATV"></option>
+                        <option value="Jeep Wrangler - 4 Door"></option>
+                        <option value="Jeep Wrangler - 2 Door"></option>
+
+                    </datalist>
+                </div>
+
+
+                <div class="form-rating">
+                    <label class="flexer" for="severity">Number Rented
+                        &nbsp;&nbsp;&nbsp;
+                        <input type="range" name="severity" value="2" min="1" max="10" step="1" list="tickmarks"
+                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">3</span>
+                    </label>
+
+
+                    <datalist id="tickmarks">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+                </div>
+
+                <div class="form-box">
+                    <label for="tel">Phone Number:</label>
+                    <input type="tel" id="tel" name="tel" placeholder="Country Code + ***-***-****" required>
+                </div>
+
+
+                <div class="form-box">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="text" placeholder="First Last" required pattern="[A-Za-z ]+"
+                        minlength="5">
+                </div>
+
+
+                <div class="form-box">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="user@email.com">
+                </div>
+
+
+
+                <div class="form-box">
+                    <label for="region">Home Country</label>
+                    <select id="region" name="region">
+                        <option selected disabled> Select Country...</option>
+                        <option value="mexico"> Mexico</option>
+                        <option value="norteAmerica"> U.S.A/Canada</option>
+                        <option value="elCaribe"> Caribbean</option>
+                        <option value="centroAmerica"> Central America
+                        </option>
+                        <option value="africa"> Africa</option>
+                        <option value="surAmerica"> South America</option>
+                        <option value="Asia"> Asia</option>
+                        <option value="Europa"> Europe</option>
+                        <option value="Isla"> Autralia/NewZealand</option>
+                    </select>
+                </div>
+
+
+                <div class="form-box">
+                    <label for="cruise">Cruiselines</label>
+                    <select id="cruise" name="cruise">
+                        <option selected disabled> Select cruise line (if applicable)</option>
+                        <option value="carnival"> Carnival Cruise</option>
+                        <option value="celebrity"> Celebrity Cruises</option>
+                        <option value="norwegian"> Norwegian Cruise Line</option>
+                        <option value="oceania"> Oceania</option>
+                        <option value="royalCarib"> Royal Caribbean Int.</option>
+                    </select>
+                </div>
+
+                <div class="form-box">
+                    <label for="comments">Accommodations ?</label>
+                    <textarea id="comments" name="comments" rows="4">
+Special accommodations  needed? </textarea>
+
+                </div>
+
+
+                <div class="form-box">
+                    <label for="comments1">Comments ?</label>
+                    <textarea id="comments1" name="comments" rows="4">Additional comments...
+                        </textarea>
+
+                </div>
+
+
+                <div class="form-box" id="submitform">
+                    <input type="submit" name="btnSend" id="btnSend" form="my-form" value="Submit Request">
+
+                </div>
+            </form>
+        </div>
+
+
+        <div class="container">
+            <div class="page">
+                <h4>Information and Services</h4>
+                <div class="news">
+                    <h5>What you need to know before renting</h5>
+
+                    <ul>
+                        <li>$50 security deposit is required to confirm reservations.</li>
+                        <li>Valid drivers license is required in hand at time of rental.</li>
+                        <li>No one under 12 years of age are allowed to ride on the scooters.</li>
+                        <li>Fuel charge not included.</li>
+                        <li>Unlimited mileage.</li>
+                        <li>Liability insurance is free of charge.</li>
+                        <li>Reservations rate requires 24 hour prior notification.</li>
+                        <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                        <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                        <li>Rentals may be returned to either location.</li>
+
+                    </ul> <br>
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer>
+        <p> &copy;
+            <span id="currentYr"> </span> Scoots | Attributions
+            | <a href="https://trenton1231.github.io/">Trenton Southard</a> </p>
+        <span id="dailydate"></span>
+
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/response.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+
+</html>

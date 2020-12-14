@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.reserveform {
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 500px;
+}
+
+
+/************
+FORM
+*************/
+
+select,
+option,
+input,
+label,
+legend {
+    padding: 0.2rem 1rem;
+    /* font-size: 1.5rem; */
+    color: inherit;
+    /* font-family: 'Indie Flower', cursive; */
+}
+
+.form-box,
+.form-rating {
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    /* font-size: large; */
+    font-family: 'Combo'sans-serif;
+}
+
+.form-rating {
+    padding: 0.5rem 0;
+    display: flex;
+    /* flex-direction: row; */
+    /* flex: 1fr 1fr 1fr; */
+}
+
+.form-box label {
+    display: none;
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea {
+    flex-basis: 100%;
+}
+
+.flexer {
+    display: flex;
+    align-items: center;
+}
+
+
+#yesbutton,
+#maybebutton,
+#nobutton {
+    display: block;
+    margin-right: 5rem;
+}
+
+#danger {
+    display: block;
+}
+
+/* #btnSend {
+    margin-left: 0rem;
+} */
+
+#submitform {
+    display: block;
+    margin: auto;
+}
+
+#bigthanks {
+    display: none;
+}
+
+#smallthanks {
+    margin-left: 7rem;
+    display: block;
+}
+
+/* FORM */
+
+
+input:invalid {
+    background-color: #f5d28c;
+    color: #000;
+}
+
+/* input:valid {
+    background-color: #dfd;
+    color: #000;
+} */
+
+#btnSend {
+    background-color: #ffe66d;
+    font-size: large;
+    font-family: 'Combo'sans-serif;
+    cursor: pointer;
+}
+
+
+#domain,
+#region,
+#state,
+#cruise {
+    cursor: pointer;
+
+}
+
+.resource li {
+    font-family: 'Pacifico', cursive;
+    list-style-type: none;
+    text-align: center;
+    padding: 5px;
+    font-size: medium;
+}
+
+
+@media only screen and (min-width: 500px) {
+
+    /************
+FORM
+*************/
+    /* .form-box {} */
+
+    .form-box label {
+        display: block;
+    }
+
+    .form-rating {
+        padding: 0.5rem 0;
+        display: block;
+    }
+
+    .form-rating input,
+    .form-rating select,
+    .form-rating textarea {
+        flex-basis: 50%;
+        margin-left: 1rem;
+    }
+
+    /* .form-box button {}
+} */
+
+
+    @media only screen and (min-width: 52.2em) {
+
+        table {
+            font-size: large;
+        }
+
+        table td {
+            padding: 2.1em;
+        }
+
+        .resource li {
+
+            font-size: large;
+        }
+    }
+}

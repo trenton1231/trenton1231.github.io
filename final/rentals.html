@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Rentals | Scoots</title>
+
+    <link rel="icon" href="images/scootLogo.jpeg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=East+Sea+Dokdo&family=Langar&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/form.css">
+
+</head>
+
+<body>
+
+
+    <header>
+        <a href="#"><img src="images/scootLogo.jpeg" alt="scoots logo"></a>
+
+        <div class="headings">
+
+            <div class="m"> 
+                Vehículos para tu disfrute
+                Vechicles for your enjoyment
+            </div>
+
+            <div class="s"> Vehículos para tu disfrute
+            </div>
+        </div>
+    </header>
+
+
+    <nav class="clearfix">
+
+        <ul class="navigation">
+            <li><a class="ham" href="#"> &#9776; Menu </a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2> Ready for some fun in the sun?</h2>
+    </div>
+    <div class="gallery">
+
+
+        <figure> <img class="norm" src='images/placeholder.png'
+                data-src='images/hondaMetro.jpeg' alt='Honda Metro scooter.'>
+            <figcaption>Honda Metro scooter</figcaption>
+
+        </figure>
+        <figure> <img class="norm" src='images/placeholder.png'
+                data-src='images/hondaDio.jpeg' alt='Honda Dio scooter.'>
+            <figcaption>Honda Dio scooter</figcaption>
+        </figure>
+        <figure> <img class="norm" src='images/placeholder.png'
+                data-src='images/hondaPCX.jpeg' alt='Honda PCX150 scooter.'>
+            <figcaption>Honda PCX150 scooter</figcaption>
+
+        </figure>
+        <figure> <img class="norm" src='images/placeholder.png'
+                data-src='images/hondaATV.jpeg' alt='Honda Pioneer atv.'>
+            <figcaption>Honda Pioneer atv</figcaption>
+
+        </figure>
+
+        <figure> <img class="norm" src='images/placeholder.png'
+                data-src='images/wrangler4.jpeg' alt='Jeep Wrangler 4-door.'>
+            <figcaption>Jeep Wrangler 4-door</figcaption>
+
+        </figure>
+        <figure> <img class="norm" src='images/placeholder.png'
+                data-src='images/wrangler2.jpeg' alt='Jeep Wrangler 2-door.'>
+            <figcaption>Jeep Wrangler 2-door</figcaption>
+
+        </figure>
+
+
+
+    </div>
+
+    <div class="prices">
+        <h3> Who said money can't buy happiness?<br> Well, it certainly can rent it!</h3>
+        <table>
+            <tr>
+                <th>Rental Type</th>
+                <th>Max Seated</th>
+                <th>Reserve & Save (3 hrs)</th>
+                <th>Reserve & Save (24 hrs)</th>
+                <th>Walk-In Price (3 hrs)</th>
+                <th>Walk-In Price (24 hrs)</th>
+
+            </tr>
+            <tbody class="cards"> </tbody>
+        </table>
+    </div>
+
+    <div class="reserveform">
+        <form id="my-form" action="reservations.html">
+            <div class="form-box">
+                <input type="submit" name="btnSend" id="btnSend" form="my-form" value="Reserve today to save!">
+
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p> &copy;
+            <span id="currentYr"> </span> Scoots | Attributions
+            | <a href="https://trenton1231.github.io/">Trenton Southard</a> </p>
+        <span id="dailydate"></span>
+
+    </footer>
+    <script src="js/trial.js"></script>
+    <script src="js/lazyload.js" defer></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/response.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,427 @@
+
+:root {
+    --color-main: #50514F;
+    --color-secondary: #B4ADEA;
+    --color-tertiary: #FDFFF7;
+    --color-quad: #b9baa3;
+    --shadow: #333;
+}
+
+
+
+
+body {
+    background: var(--color-tertiary);
+    max-width: 1600px;
+    margin: auto;
+}
+
+
+header {
+    background-color: var(--color-main);
+    display: flex;
+    letter-spacing: 0.1em;
+    align-items: center;
+}
+
+header img {
+    width: 90px;
+    height: auto;
+    margin: 3px 25px 0 25px;
+    border-radius: 50%;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+nav {
+    margin: 0 auto;
+    background-color: var(--color-quad);
+    font-family: 'Cinzel', serif;
+    box-shadow: 3px 6px 12px var(--shadow);
+    font-weight: 700;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 0.45rem;
+    text-decoration: none;
+    text-align: left;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.navigation a:hover {
+    font-size: 17px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.navigation li:first-child {
+    display: block;
+    background-color: var(--color-quad);
+    text-transform: lowercase;
+    font-family: 'East Sea Dokdo', cursive;
+}
+
+.navigation li:first-child a:hover {
+    text-transform: lowercase;
+}
+
+.active {
+    background-color: var(--color-quad);
+    font-size: large;
+}
+
+.responsive li {
+    display: block;
+}
+
+.clima {
+    background-color: var(--color-quad);
+    padding: .5rem;
+    opacity: .9;
+    text-align: left;
+}
+
+.clima p {
+    font-size: small;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'East Sea Dokdo', cursive;;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+#weather-desc,
+#current-temp,
+#high-temp,
+#humidity,
+#wind-speed,
+#windchill {
+    font-family: 'East Sea Dokdo', cursive;;
+    color: var(--color-tertiary);
+    font-weight: 700;
+}
+
+h2 {
+    color: rgb(0, 0, 0);
+    margin: 10px 0px 15px 0;
+    font-family: 'East Sea Dokdo', cursive;;
+}
+
+h3 {
+    color: black;
+    font-family: 'East Sea Dokdo', cursive;;
+    font-size: x-large;
+    padding: 30px;
+    text-align: right;
+    margin: -5px 0 30px 0;
+}
+
+.page {
+    background-color: var(--color-quad);
+}
+
+h4 {
+    color: black;
+    background-color: var(--color-tertiary);
+    font-size: xx-large;
+    text-align: center;
+    margin: 1rem;
+    font-family: 'East Sea Dokdo', cursive;;
+    padding: 15px;
+}
+
+h5 {
+    color: rgb(0, 0, 0);
+    font-size: xx-large;
+    margin: 10px 0px 10px 0;
+    font-family: 'East Sea Dokdo', cursive;;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+.page li {
+    background-color: white;
+    font-family: 'East Sea Dokdo', cursive;;
+    list-style-type: none;
+    text-align: center;
+    padding: 5px;
+    font-size: medium;
+}
+
+h6 {
+    font-family: 'East Sea Dokdo', cursive;;
+    text-transform: uppercase;
+}
+
+#credit {
+    color: rgb(255, 255, 255);
+    font-family: 'East Sea Dokdo', cursive;;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+
+.page a:link {
+    text-decoration: none;
+}
+
+
+.m {
+    display: none;
+}
+
+.s {
+    display: block;
+    font-style: italic;
+    color: rgb(0, 0, 0);
+    font-family: 'East Sea Dokdo', cursive;;
+    font-size: small;
+    text-transform: lowercase;
+}
+
+.contactus {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.container>div {
+    flex: 100%;
+    height: auto;
+    padding: 25px;
+    margin: 1.5em;
+    vertical-align: middle;
+}
+
+.news img {
+    width: 100%;
+    height: auto;
+    margin: 0 20px 10px 0px;
+}
+
+.news img:hover {
+    box-shadow: 0 0 10px var(--shadow);
+    cursor: pointer;
+}
+
+.news p {
+    font-family: 'East Sea Dokdo', cursive;;
+    font-size: 1.4rem;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+
+}
+
+.signature {
+    display: none;
+}
+
+.signature1 {
+    position: absolute;
+    font-family: 'East Sea Dokdo', cursive;;
+    bottom: 15px;
+    left: 5px;
+    color: black;
+    letter-spacing: 1px;
+    font-size: small;
+    background-color: var(--color-secondary);
+    padding: 1rem;
+    box-shadow: 10px 10px 30px var(--shadow);
+}
+
+.signature br {
+    display: none;
+}
+
+.signature em {
+    font-family: 'East Sea Dokdo', cursive;;
+    font-size: small;
+    color: rgb(0, 0, 0);
+
+}
+
+.signature2 {
+    display: none;
+}
+
+.signature3 {
+    position: absolute;
+    font-family: 'East Sea Dokdo', cursive;;
+    bottom: 15px;
+    left: 5px;
+    color: black;
+    letter-spacing: 1px;
+    font-size: small;
+    background-color: var(--color-tertiary);
+    padding: .9rem;
+    opacity: .9;
+    text-align: center;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.hero1 {
+    position: relative;
+    display: none;
+}
+
+.hero img,
+.hero1 img {
+    width: 100%;
+    height: auto;
+}
+
+
+.forecast,
+.prices {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: transparent;
+}
+
+.forecast {
+    display: none;
+}
+
+.prices {
+    display: block;
+}
+
+
+.prices td:first-child {
+    background-color: #f7fff7;
+    font-weight: bold;
+    font-family: 'East Sea Dokdo', cursive;;
+}
+
+.prices tr:nth-child(even) {
+    background-color: #f7fff7;
+
+}
+
+table {
+    box-shadow: 0 0 10px var(--shadow);
+}
+
+table th {
+    background-color: var(--color-tertiary);
+    color: black;
+    font-family: 'East Sea Dokdo', cursive;;
+    padding: 0.3rem;
+    font-size: x-small;
+}
+
+table td {
+    font-family: 'East Sea Dokdo', cursive;;
+    font-size: x-small;
+    margin: 1em;
+    background: var(--color-secondary);
+    width: 100%;
+}
+
+table td:first-child {
+    font-size: x-small;
+}
+
+table td:nth-child(odd) {
+    background: var(--color-secondary);
+}
+
+
+.info img {
+    width: 70%;
+    height: auto;
+    margin: 0 20px 10px 0px;
+}
+
+.info {
+    text-align: left;
+    line-height: 250%;
+}
+
+.info p {
+    font-size: small;
+}
+
+.contact {
+    font-family: 'East Sea Dokdo', cursive;;
+    font-size: 1.4rem;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.map {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    float: right;
+    box-shadow: 0 0 10px var(--shadow);
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+}
+
+.social:hover {
+    opacity: 0.3;
+}
+
+.social {
+    max-width: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--color-main);
+    color: black;
+    padding: 1.4em;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    box-shadow: 3px 6px 12px var(--shadow);
+}
+
+footer a {
+    color: var(--color-tertiary);
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

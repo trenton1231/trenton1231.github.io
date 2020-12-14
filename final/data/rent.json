@@ -1,0 +1,75 @@
+{
+    "vehicles": [{
+            "rentaltype": "Honda Metro Scooter",
+            "capacity": 1,
+            "reservation": {
+                "tres": 20,
+                "day": 30
+            },
+            "walkin": {
+                "half": 25,
+                "full": 35
+            }
+        },
+        {
+            "rentaltype": "Honda Dio Scooter",
+            "capacity": 2,
+            "reservation": {
+                "tres": 30,
+                "day": 40
+            },
+            "walkin": {
+                "half": 35,
+                "full": 45
+            }
+        },
+        {
+            "rentaltype": "Honda PCX150 Scooter",
+            "capacity": 2,
+            "reservation": {
+                "tres": 40,
+                "day": 50
+            },
+            "walkin": {
+                "half": 45,
+                "full": 55
+            }
+        },
+        {
+            "rentaltype": "Honda Pioneer ATV",
+            "capacity": 4,
+            "reservation": {
+                "tres": 50,
+                "day": 70
+            },
+            "walkin": {
+                "half": 60,
+                "full": 80
+            }
+        },
+        {
+            "rentaltype": "Jeep Wrangler (4 door & A/C)",
+            "capacity": 5,
+            "reservation": {
+                "tres": 70,
+                "day": 10
+            },
+            "walkin": {
+                "half": 85,
+                "full": 12
+            }
+        },
+        {
+            "rentaltype": "Jeep Wrangler (2 door)",
+            "capacity": 4,
+            "reservation": {
+                "tres": 60,
+                "day": 85
+            },
+            "walkin": {
+                "half": 70,
+                "full": 90
+            }
+        }
+    ]
+}

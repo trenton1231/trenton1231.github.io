@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Home | Scoots</title>
+
+    <link rel="icon" href="images/scootLogo.jpeg">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&family=East+Sea+Dokdo&family=Langar&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+</head>
+
+<body>
+
+
+    <header>
+        <a href="#"><img src="images/scootLogo.jpeg" alt="scoots logo"></a>
+
+        <div class="headings">
+
+            <div class="m"> 
+                Vehículos para tu disfrute
+                Vechicles for your enjoyment
+            </div>
+
+            <div class="s"> Vehículos para tu disfrute
+            </div>
+        </div>
+    </header>
+
+    <nav class="clearfix">
+
+        <ul class="navigation">
+            <li><a class="ham" href="#"> &#9776; Menu </a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="tours.html">Tours</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="hero">
+            <a href="reservations.html">
+                <h1 class="signature1"> Click here to <br>reserve today! </h1>
+            </a>
+
+
+            <img src="images/landscape.jpeg" alt="Cozumel landscape" />
+
+
+        </div>
+
+
+        <section class="clima">
+            <h2>Did we mention the weather is perfect for a drive?</h2>
+            <p>Current: <span id="weather-desc"></span><br>
+                Temperature: <span id="current-temp"></span> &deg;F<br>
+                Humidity: <span id="humidity"></span> %</p>
+        </section>
+
+        <div class="container">
+            <h3>Ready to explore the beauty of Cozumel, Mexico?</h3>
+            <div class="page">
+                <a href="reservations.html">
+                    <h4>Scooters</h4>
+                </a>
+                <div class="news">
+                    <a href="rentals.html"><img src="images/scooter.jpeg"
+                            alt="Scooters on the ledge"></a>
+                    <h5>Solo ride or something a little more roomy? </h5>
+                    <ul>
+                        <li>Easy to use</li>
+                        <li>Cost-effective</li>
+                        <li>1 or 2 seaters avaliable!</li>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+
+
+
+
+            <div class="page">
+                <a href="reservations.html">
+                    <h4>ATVs</h4>
+                </a>
+                <div class="news">
+                    <a href="rentals.html"><img src="images/atv.jpeg"
+                            alt="ATV in a cave"></a>
+                    <h5>Cave tours on an ATV? Or freestlye exlporing</h5>
+                    <ul>
+                        <li>All Terrain Vehicles can go anywhere!</li>
+                        <li>Hold on tight</li>
+                        <li>Seating for up to 4</li>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+
+
+
+
+            <div class="page">
+                <a href="reservations.html">
+                    <h4>Jeeps</h4>
+                </a>
+                <div class="news">
+                    <a href="rentals.html"><img src="images/jeep.jpeg"
+                            alt="Jeep on beach"></a>
+                    <h5>Something a little bigger?</h5>
+                    <ul>
+                        <li>Classic - but modern</li>
+                        <li>Surfboards, picnic, adventure</li>
+                        <li>Seats for 5! (And A/C!)</li>
+                    </ul>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="forecast">
+            <h2> Check out the rest of the week!</h2>
+            <table>
+                <tr>
+                    <th><span id="dayofweek1"></span></th>
+                    <th><span id="dayofweek2"></span></th>
+                    <th><span id="dayofweek3"></span></th>
+                    <th><span id="dayofweek4"></span></th>
+                    <th><span id="dayofweek5"></span></th>
+                </tr>
+                <tr>
+
+                    <td><img src="" alt="" id="icon1"> <br> <span id="forecast1"></span>&deg;F </td>
+                    <td><img src="" alt="" id="icon2"> <br><span id="forecast2"></span>&deg;F </td>
+                    <td><img src="" alt="" id="icon3"> <br><span id="forecast3"></span>&deg;F</td>
+                    <td><img src="" alt="" id="icon4"><br><span id="forecast4"></span>&deg;F</td>
+                    <td><img src="" alt="" id="icon5"><br><span id="forecast5"></span>&deg;F</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="container">
+            <div class="page">
+                <a href="tours.html">
+                    <h4>Tours</h4>
+                </a>
+                <div class="news">
+                    <a href="tours.html"><img src="images/tour.jpeg"
+                            alt="Boat tours off coast."></a>
+                    <h5>Where is the best scenery?</h5>
+                </div>
+                <em id=credit>Follow us to find the best landscape shots around!</em>
+            </div>
+        </div>
+
+
+
+    </main>
+    <footer>
+        <p> &copy;
+            <span id="currentYr"> </span> Scoots | Attributions
+            | <a href="https://trenton1231.github.io/">Trenton Southard</a> </p>
+        <span id="dailydate"></span>
+
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/cozumelapi.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/response.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+</body>
+
+</html>
