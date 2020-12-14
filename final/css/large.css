@@ -68,7 +68,7 @@ nav {
 }
 
 .navigation a:hover {
-    font-size: 17px;
+    font-size: 32px;
     color: black;
     text-transform: uppercase;
 }
@@ -101,7 +101,7 @@ nav {
 }
 
 .clima p {
-    font-size: small;
+    font-size: 32px;
     text-transform: uppercase;
     text-align: center;
     font-family: 'East Sea Dokdo', cursive;;
@@ -164,7 +164,7 @@ h5 {
     list-style-type: none;
     text-align: center;
     padding: 5px;
-    font-size: medium;
+    font-size: 32px;
 }
 
 h6 {
@@ -194,7 +194,7 @@ h6 {
     font-style: italic;
     color: rgb(0, 0, 0);
     font-family: 'Cinzel', serif;
-    font-size: small;
+    font-size: 32px;
     text-transform: lowercase;
 }
 
@@ -260,7 +260,7 @@ h6 {
     left: 5px;
     color: black;
     letter-spacing: 1px;
-    font-size: small;
+    font-size: 32px;
     background-color: var(--color-secondary);
     padding: 1rem;
     box-shadow: 10px 10px 30px var(--shadow);
@@ -272,7 +272,7 @@ h6 {
 
 .signature em {
     font-family: 'East Sea Dokdo', cursive;;
-    font-size: small;
+    font-size: 32px;
     color: rgb(0, 0, 0);
 
 }
@@ -283,12 +283,12 @@ h6 {
 
 .signature3 {
     position: absolute;
-    font-family: 'East Sea Dokdo', cursive;;
+    font-family: 'East Sea Dokdo', cursive;
     bottom: 15px;
     left: 5px;
     color: black;
     letter-spacing: 1px;
-    font-size: small;
+    font-size: 32px;
     background-color: var(--color-secondary);
     padding: .9rem;
     opacity: .9;
@@ -342,27 +342,27 @@ table {
 }
 
 table th {
-    background-color: var(--color-secondary);
+    background-color: var(--color-main);
     color: black;
     font-family: 'East Sea Dokdo', cursive;;
     padding: 0.3rem;
-    font-size: x-small;
+    font-size: 32px;
 }
 
 table td {
     font-family: 'East Sea Dokdo', cursive;;
-    font-size: x-small;
+    font-size: 32px;
     margin: 1em;
-    background: #b6a99918;
+    background: var(--color-main);
     width: 100%;
 }
 
 table td:first-child {
-    font-size: x-small;
+    font-size: 32px;
 }
 
 table td:nth-child(odd) {
-    background: #b6a9992d;
+    background: var(--color-secondary);
 }
 
 
@@ -378,7 +378,7 @@ table td:nth-child(odd) {
 }
 
 .info p {
-    font-size: small;
+    font-size: 32px;
 }
 
 .contact {

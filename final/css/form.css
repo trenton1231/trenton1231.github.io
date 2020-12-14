@@ -1,4 +1,11 @@
-*,
+:root {
+    --color-main: #50514F;
+    --color-secondary: #B4ADEA;
+    --color-tertiary: #FDFFF7;
+    --color-quad: #b9baa3;
+    --shadow: #333;
+}
+
 *::before,
 *::after {
     box-sizing: inherit;
@@ -11,19 +18,14 @@
 }
 
 
-/************
-FORM
-*************/
-
 select,
 option,
 input,
 label,
 legend {
     padding: 0.2rem 1rem;
-    /* font-size: 1.5rem; */
     color: inherit;
-    /* font-family: 'Indie Flower', cursive; */
+
 }
 
 .form-box,
@@ -31,15 +33,13 @@ legend {
     padding: 0.5rem 0;
     display: flex;
     flex-direction: column;
-    /* font-size: large; */
-    font-family: 'Combo'sans-serif;
+    font-family: 'Cinzel', serif;
+    ;
 }
 
 .form-rating {
     padding: 0.5rem 0;
     display: flex;
-    /* flex-direction: row; */
-    /* flex: 1fr 1fr 1fr; */
 }
 
 .form-box label {
@@ -69,9 +69,6 @@ legend {
     display: block;
 }
 
-/* #btnSend {
-    margin-left: 0rem;
-} */
 
 #submitform {
     display: block;
@@ -87,23 +84,19 @@ legend {
     display: block;
 }
 
-/* FORM */
 
 
 input:invalid {
-    background-color: #f5d28c;
-    color: #000;
+    background-color: var(--color-main);
+    color: var(--shadow);
 }
 
-/* input:valid {
-    background-color: #dfd;
-    color: #000;
-} */
 
 #btnSend {
-    background-color: #ffe66d;
+    background-color: var(--color-quad);
     font-size: large;
-    font-family: 'Combo'sans-serif;
+    font-family: 'Cinzel', serif;
+    ;
     cursor: pointer;
 }
 
@@ -117,7 +110,7 @@ input:invalid {
 }
 
 .resource li {
-    font-family: 'Pacifico', cursive;
+    font-family: 'East Sea Dokdo', cursive;
     list-style-type: none;
     text-align: center;
     padding: 5px;
@@ -126,11 +119,6 @@ input:invalid {
 
 
 @media only screen and (min-width: 500px) {
-
-    /************
-FORM
-*************/
-    /* .form-box {} */
 
     .form-box label {
         display: block;
@@ -147,10 +135,6 @@ FORM
         flex-basis: 50%;
         margin-left: 1rem;
     }
-
-    /* .form-box button {}
-} */
-
 
     @media only screen and (min-width: 52.2em) {
 
