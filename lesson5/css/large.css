@@ -9,6 +9,16 @@
 
     }
 
+    .flex-container {
+        max-width: 80%;
+        padding-left:10%;
+    }
+
+    .flex-container2 {
+        max-width: 80%;
+        padding-left:10%;
+    }
+
     h2 {
         color: steelblue;
     }
@@ -114,9 +124,6 @@
         box-shadow: 0 0 30px #111;
         top: -50px
     }
-}
-
-@media only screen and (min-width: 60em) {
     main {
         margin: 0 auto;
         font-size: 16px;
@@ -217,9 +224,6 @@
     footer {
         width: 60%;
     }
-}
-
-@media only screen and (min-width: 60em) {
     :root {
         --color-main: #50514F;
         --color-secondary: #B4ADEA;
@@ -349,6 +353,5 @@
 
   .gallery img:hover {
       box-shadow: 0 0 20px rgb(141, 141, 141);
-
-}
+  }
 }
