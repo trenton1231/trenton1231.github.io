@@ -23,3 +23,90 @@
         width: 80%;
     }
 }
+
+@media only screen and (min-width: 34.5em) {
+    .footer {
+        width: 90%;
+    }
+
+    .cards {
+        grid-gap: 15px;
+    }
+
+    main {
+        width: 80%;
+    }
+
+    section:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    img {
+        width: 50%;
+    }
+
+    .star {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .secdtdiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sectdiv img {
+        width: 70%;
+        overflow: hidden;
+    }
+
+    .display {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 37.5em) {
+    :root {
+        --color-main: #50514F;
+        --color-secondary: #B4ADEA;
+        --color-tertiary: #FDFFF7;
+        --color-quad: #b9baa3;
+        --shadow: #333;
+
+    }
+
+    .boxes {
+        background-color: #b9baa3;
+        align-items: center;
+        color: #333;
+    }
+
+    .footer {
+        width: 80%;
+    }
+
+    main {
+        width: 80%;
+    }
+
+.weather_summary {
+    margin-top: -235px;
+    margin-left: 25px;
+    position: absolute;
+    text-align: left;
+    line-height: 0.5rem;
+    padding: 1.5rem;
+    opacity: .8;
+}
+
+.gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+}

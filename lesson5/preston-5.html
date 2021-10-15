@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 05 - The Weather WDD230</title>
+    <title>Preston</title>
     <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/standard.css">
@@ -36,91 +36,91 @@
                 <a class="ham" href="#">&#9776; Menu</a>
             </li>
             <li>
-                <a href="#">Home</a>
+                <a href="/lesson11/index.html">Home</a>
             </li>
             <li>
-                <a href="#">Preston</a>
+                <a href="/lesson11/preston.html">Preston</a>
             </li>
             <li>
-                <a href="#">Soda Springs</a>
+                <a href="/lesson11/sodaSprings.html">Soda Springs</a>
             </li>
             <li>
-                <a href="#">Fish Haven</a>
+                <a href="/lesson11/fishHaven.html">Fish Haven</a>
             </li>
             <li>
-                <a href="#">Storm Center</a>
+                <a href="/lesson11/stormcenter.html">Storm Center</a>
             </li>
             <li>
-                <a href="#">Gallery</a>
+                <a href="/lesson11/gallery.html">Gallery</a>
             </li>
         </ul>
     </nav>
     <main>
         <h1>Preston Idaho</h1>
         <div class="bannerdiv">
-            <img class="bannerpic" src="images/frensoSky.jpg" alt="banner">
+            <picture>
+                <source srcset="images/weatherSmall.jpeg" media="(max-width: 33.5em)">
+                <source srcset="images/weatherMedium.jpeg" media="(max-width: 57.5em)">
+                <img src="images/preston.jpg" class="Image" alt="Preston">
+            </picture>>
 
             <section class="bannerSection">
-                <h2>Weather Summary</h2>
-                <p>Currently: <span id="current">Sunny</span></p>
-                <p>High: <span id="high">76 °F</span></p>
-                <p>Wind Chill: <span id="chill">°F </span></p>
-                <p>Humidity: <span id="humid">69% </span></p>
-                <p>Wind Speed: <span id="windy">5 mph </span></p>
+                <h3 class="h2banner">Weather Summary</h3>
+                <p>Currently:<span id="currently"></span></p>
+                <p>High:<span id="high"></span></p>
+                <p>Wind Chill:<span id="windchill"></span></p>
+                <p>Humidity:<span id="humid"></span></p>
+                <p>Wind Speed:<span id="windspeed"></span></p>
             </section>
         </div>
 
         <div class="forecastsection">
-            <h2>5 Day forecast</h2>
+            <h2>5 Day Forecast</h2>
             <table class="forecasttable">
                 <tr>
-                    <th>Wed</th>
-                    <th>Thur</th>
-                    <th>Fri</th>
-                    <th>Sat</th>
-                    <th>Sun</th>
+                    <th><span id="dayofweek6"></span></th>
+                    <th><span id="dayofweek14"></span> </th>
+                    <th><span id="dayofweek22"></span> </th>
+                    <th><span id="dayofweek30"></span> </th>
+                    <th><span id="dayofweek38"></span> </th>
                 </tr>
                 <tr>
-                    <td><img src="images/Sunny.png" alt="Sunny"><br>89 &deg;F</td>
-                    <td><img src="images/Sunny.png" alt="Sunny"><br>87 &deg;F</td>
-                    <td><img src="images/pCloudly.png" alt="Partly Cloudy"><br>78 &deg;F</td>
-                    <td><img src="images/pCloudly.png" alt="Partly Cloudly"><br>75 &deg;F</td>
-                    <td><img src="images/Stormy.png" alt="Stormy"><br>72 &deg;F</td>
+
+
+                    <td> <br> &nbsp;<img src="images/placeholder.png" alt="placeholder" id="icon6"><br>
+                        <span id="forecast6"></span>&deg; F</td>
+                    <td> <br> &nbsp;<img src="images/placeholder.png" alt="placeholder" id="icon14">
+                        <br><span id="forecast14"></span>&deg; F</td>
+                    <td> <br> &nbsp;<img src="images/placeholder.png" alt="placeholder" id="icon22">
+                        <br><span id="forecast22"></span>&deg; F</td>
+                    <td> <br> &nbsp;<img src="images/placeholder.png" alt="placeholder" id="icon30">
+                        <br><span id="forecast30"></span>&deg; F</td>
+                    <td> <br> &nbsp;<img src="images/placeholder.png" alt="placeholder" id="icon38">
+                        <br><span id="forecast38"></span>&deg; F</td>
                 </tr>
             </table>
+            <span id="imagesrc"></span>
         </div>
+        <section class="newCard">
+            <h2>Upcoming Events:</h2>
+        </section>
         <div class="flex-container">
 
             <div class="flex-item">
-                <img class="artImg" src="images/fresno.jpg" alt="artyImg">
+                <img class="artImg" src="images/thanksgiving.png" alt="thanksgiving">
 
-                <h3>Founder Day Fresco</h3>
-                <h4><i>Trenton Southard</i></h4>
-                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia...
+                <h3>Thanksgiving Gatherings</h3>
+                <h4><i>Source: CDC and NCIRD </i></h4>
+                <span>More than 1 million COVID-19 cases were reported in the United States over the last 7 days.
 
-                    <a href="#">continue to full article</a></span>
+                    As cases continue to increase rapidly across the United States, the safest way to celebrate
+                    Thanksgiving is to celebrate at home with the people you live with.
+
+                    Gatherings with family and friends who do not live with you can increase the chances of getting <br>
+                    or spreading COVID-19 or the flu.
+
+                    <a href="https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/holidays/thanksgiving.html">continue
+                        to full article</a></span>
             </div>
         </div>
 
@@ -146,6 +146,9 @@
     </footer>
     <script src="js/date.js"></script>
     <script src="js/response.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/preston.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 
 </body>
 
